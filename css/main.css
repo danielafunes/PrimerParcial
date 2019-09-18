@@ -20,7 +20,9 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin:1.9em;
+    margin-top: 0.7em;
 }
 
 .src-only {
@@ -60,8 +62,13 @@ p{
 }
 
 /* Big area */
+.big-hero .container{
+    margin-top: 3.4em;
+    margin-bottom: 5em;
+}
+
 .big-hero img {
-    width: 150px;
+    width: 120px;   
 }
 
 .big-hero h2 {
@@ -72,16 +79,22 @@ p{
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    margin-top: -1em;
+    margin-bottom: 1em;
     color: #D7DEE6;
-
+    font-size: 0.75em;
+}
+.fa-arrow-circle-down {
+    font-size: 4.13em;
+    color: #0BC593;
+    margin-top: -0.19em;
 }
 
 /* Social links*/
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
+    margin-top: -5.8em;
     display: flex;
     flex-direction: row;
     justify-content: center
@@ -91,7 +104,8 @@ p{
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 8.5em;
+    margin: 15px;
 }
 
 
@@ -241,6 +255,7 @@ footer .social-links {
     right: 0;
     width: 100vw;
     height: calc(100vh - 60px);
+    letter-spacing: 0.9px;
 }
 
 .menu {
@@ -257,12 +272,28 @@ footer .social-links {
 .menu li a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
+    margin: 3px;
     
+}
+.menu li a:active,
+.menu li a:hover {
+    color: #F74442;
 }
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+    .big-hero .container{
+        margin-top: -2em;
+        margin-bottom: 8em;
+    }
+    .big-hero img {
+        width: 130px;
+    }
+    .header {
+        margin:8.9em;
+        margin-top: 0.5em;
+    }
     .post ul {
         list-style: none;
         display: flex;
@@ -279,7 +310,7 @@ footer .social-links {
 
 
     .logo {
-        width: 150px;
+        width: 130px;
         margin: 1.5em;
     }
 
@@ -311,7 +342,9 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
-
+       .big-hero img {
+            width: 140px;
+        }
 
 }
 
@@ -322,5 +355,8 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+    .big-hero img {
+        width: 150px;
     }
 }
