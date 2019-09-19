@@ -211,7 +211,7 @@ p{
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-right: 2em;
   
 }
@@ -236,6 +236,8 @@ p{
     display: flex;
     flex-direction: column;
     margin-top: -2em;
+    margin-left:-2.5em;
+    margin-right: -2.5em;
 }
 
 .contact-form input, .contact-form textarea{
