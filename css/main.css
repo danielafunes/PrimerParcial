@@ -10,6 +10,8 @@
 }
 
 /* El estilo base para moviles */
+/* en el body como dise;o se ha colocado un color de fondo asi tambien el color de la letras
+, una fuente */
 body {
     background-color: #112935;
     color: white;
@@ -17,12 +19,14 @@ body {
     text-align: center;
     font-weight: 400;
 }
+/* en el container se usa flexbox para que pueda adaptarse a difeentes tamaños*/
 .container{
     display: flexbox;
     padding: 0em 2em;
    
 
 }
+/* el header tambie se utiliza flex  y margenes para tener una mejor posicion de los elementos*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,17 +41,19 @@ body {
 .hide-mobile {
     display: none;
 }
+/* para el parrafo se utilizo un tamaño de fuente y una determinada altura para un mejor diseño*/
 
 p{
     font-size: 1em;
     padding: 1rem;
     line-height: 35px;
 }
-
+/* con el logo se utilizo un ancho y un margen para una mejor adaptacion en la pagina*/
 .logo {
     width: 90px;
     margin: 1em;
 }
+/* */
 
 .options {
     color: inherit;
@@ -278,7 +284,7 @@ p{
     font-weight: 400;
     color: white;
     font-size: 1rem;
-    width: 14em;
+    width: 15em;
 }
 
 .black-decoration{
@@ -292,7 +298,7 @@ footer{
 
 footer .social-links {
     margin: 0;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 .menu {
