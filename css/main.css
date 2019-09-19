@@ -17,7 +17,12 @@ body {
     text-align: center;
     font-weight: 400;
 }
+.container{
+    display: flexbox;
+    padding: 0em 2em;
+   
 
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -34,9 +39,9 @@ body {
 }
 
 p{
-    font-size: 0.75em;
+    font-size: 1em;
     padding: 1rem;
-    line-height: 25px;
+    line-height: 35px;
 }
 
 .logo {
@@ -60,6 +65,14 @@ p{
 .options i:last-child {
     font-size: 1.6rem;
 }
+
+
+.bio-info img{
+    width: 150px; height: 150px;
+
+ 
+}
+
 
 /* Big area */
 .big-hero .container{
@@ -98,6 +111,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center
+    
 
 }
 
@@ -111,6 +125,7 @@ p{
 
 .green-area {
     background-color: #0AC693; 
+    margin-bottom: -2em;
 }
 
 
@@ -127,6 +142,7 @@ p{
 
 .post ul {
     list-style: none;
+    margin-bottom: -2em;
 }
 
 .post ul li {
@@ -137,10 +153,16 @@ p{
 
 .post ul li article {
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    margin: 3em;
+    margin-top: -1em;
+    
+   
+    
+
 }
 
 .post article img{
@@ -163,7 +185,7 @@ p{
     color:#112935;
     font-size: 0.75em;
     padding: 1rem;
-    line-height: 25px;
+    line-height: 20px;
 }
 
 /* About */
@@ -176,7 +198,7 @@ p{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
-    margin: 2em;
+    margin: 3em;
 }
 
 .bio-info img{
@@ -189,6 +211,9 @@ p{
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
+    margin-left: 2em;
+    margin-right: 2em;
+  
 }
 
 .contact {
@@ -196,10 +221,15 @@ p{
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
+    margin-top: 2em;
+    margin-left: 5em;
+
+    
 }
 
 .contact * + * {
     margin-top: 1.5em;
+   
 }
 
 .contact-form {
@@ -212,9 +242,22 @@ p{
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
-    width: 100%;
+    width: 75%;
+    
+   
+   
 }
 
+.bio-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .about > .bio-info {
+    display: flexbox;
+  }
+  .about > .contact {
+    display: flexbox;
+  }
 /* Decorando placeholder */
 
 ::-webkit-input-placeholder { 
@@ -232,6 +275,7 @@ p{
     font-weight: 400;
     color: white;
     font-size: 1rem;
+    width: 14em;
 }
 
 .black-decoration{
@@ -245,6 +289,7 @@ footer{
 
 footer .social-links {
     margin: 0;
+    margin-top: 3em;
 }
 
 .menu {
@@ -306,6 +351,9 @@ footer .social-links {
         max-height: 3500px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
+        padding-top: 1em;
+     
+     
     }
 
 
@@ -336,27 +384,32 @@ footer .social-links {
 
 
     /*TODO: FALTA CSS */
-} 
 
-@media only screen and (min-width: 1024px) {
-
-       /*TODO: FALTA CSS */
-
-       .big-hero img {
-            width: 140px;
+    @media only screen and (min-width: 1024px) {
+        /*TODO: FALTA CSS */
+        /*modificando los divs de contacto y bio-info*/
+        .about > .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: repeat(2, 1fr);
+          justify-content: space-between;
         }
-
-}
-
-@media only screen and (min-width: 1440px) {
-
-    /*TODO: FALTA CSS */
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1440px;
+      
+        .about h2 {
+          grid-column: 1 / span 3;
+        }
+        .contact {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+      }
+      
+      @media only screen and (min-width: 1440px) {
+        /*TODO: FALTA CSS */
+        .container {
+          width: 80%;
+          margin: 0 auto;
+          max-width: 1440px;
+        }
+      }
     }
-    .big-hero img {
-        width: 150px;
-    }
-}
