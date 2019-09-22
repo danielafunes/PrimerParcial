@@ -10,7 +10,7 @@
 }
 
 /* El estilo base para moviles */
-/* en el body como dise;o se ha colocado un color de fondo asi tambien el color de la letras
+/* en el body como diseño se ha colocado un color de fondo asi tambien el color de la letras
 , una fuente */
 body {
     background-color: #112935;
@@ -19,7 +19,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-/* en el container se usa flexbox para que pueda adaptarse a difeentes tamaños*/
+/* en el container se usa flexbox para que pueda adaptarse a diferentes tamaños*/
 .container{
     display: flexbox;
     padding: 0em 2em;
@@ -53,7 +53,7 @@ p{
     width: 90px;
     margin: 1em;
 }
-/* */
+/*/*personalizando  options */ */
 
 .options {
     color: inherit;
@@ -72,7 +72,7 @@ p{
     font-size: 1.6rem;
 }
 
-
+/*personalizando el tamaño y altura de de la imagen que esta colocada en la bio-info */
 .bio-info img{
     width: 150px; height: 150px;
 
@@ -85,30 +85,32 @@ p{
     margin-top: 3.4em;
     margin-bottom: 5em;
 }
-
+/*se le coloco un tamaño a la imagen */
 .big-hero img {
     width: 120px;   
 }
-
+/*personalizando con un tamaño de fuente en espesifico ,altura, 
+espacio de letras y un margen superior */
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
-
+/*personalizando los parrafos de la big-hero */
 .big-hero p {
     margin-top: -1em;
     margin-bottom: 1em;
     color: #D7DEE6;
     font-size: 0.75em;
 }
+
 .fa-arrow-circle-down {
     font-size: 4.13em;
     color: #0BC593;
     margin-top: -0.19em;
 }
-
+/*se perzonalizo la parte de social-link */
 /* Social links*/
 .social-links{
     list-style: none;
@@ -116,11 +118,11 @@ p{
     margin-top: -5.8em;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
     
 
 }
-
+/*color, margen y tamaño de fuente */
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
@@ -128,13 +130,13 @@ p{
     margin: 15px;
 }
 
-
+/*se agrego un color de fondo y un margen superior*/
 .green-area {
     background-color: #0AC693; 
     margin-bottom: -2em;
 }
 
-
+/*personalizando a los post que esta colococados en la pagina segun lo requerido */
 .post {
     padding: 1em;
     margin-bottom: -2px;
@@ -156,7 +158,7 @@ p{
     max-width: 350px;
     margin: 2rem auto;
 }
-
+/*personalizando el post */
 .post ul li article {
     overflow: hidden;
     border-radius: 4px;
@@ -171,6 +173,7 @@ p{
 
 }
 
+/*a la imagen del articulo se le coloco una altura, ancho y cover */
 .post article img{
     height: 150px;
     width: 100%;
@@ -206,11 +209,11 @@ p{
     font-size: 1.125em;
     margin: 3em;
 }
-
+/*en la imagen se le agrego un ancho */
 .bio-info img{
    width: 200px;
 }
-
+/*personalizando la parte de bio-info */
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -221,7 +224,7 @@ p{
     margin-right: 2em;
   
 }
-
+/*personalizando el menu para contactar */
 .contact {
     display: flex;
     flex-direction: column;
@@ -232,12 +235,12 @@ p{
 
     
 }
-
+/*en esta parte se le agrego un margen para su adaptacion */
 .contact * + * {
     margin-top: 1.5em;
    
 }
-
+/* se ultilizo para la acomodacion en diferentes tamaños */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -256,6 +259,7 @@ p{
    
    
 }
+/*formando las columnas */
 
 .bio-info {
     grid-column: 1/2;
@@ -279,6 +283,9 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
+/*en en esta parte se trabajo la anchura y 
+tambien se utilizo las etiquetas para darle un diseño */
+
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -290,17 +297,17 @@ p{
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/* color de letra y fondo en el footer */
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
-
+/*se le agrego un margen y un magen superior al footer social */
 footer .social-links {
     margin: 0;
     margin-top: 5em;
 }
-
+/*personalizando el menu para la adaptacion correcta */
 .menu {
     background-color: #112935;
     position: absolute;
@@ -317,6 +324,7 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+/*lista del munu perzonalizado segun lo requerido*/
 .menu li {
     display: block;
     padding: 0.5em;
@@ -344,6 +352,7 @@ footer .social-links {
     .big-hero img {
         width: 130px;
     }
+    /*al header se le definio un margen y un margen superior */
     .header {
         margin:8.9em;
         margin-top: 0.5em;
@@ -364,7 +373,8 @@ footer .social-links {
      
      
     }
-
+/*el logo de home tiene un mayor tamaño que el de mobiles 
+debeido que se debe ajustar segun el tamño de pantalla */
 
     .logo {
         width: 130px;
@@ -378,7 +388,7 @@ footer .social-links {
     .hide-desktop {
         display: none;
     }
-
+/*al menu se le grego un color de fondo, poisicion, ancho,altura, margen superior y flex */
     .menu {
         background-color: #112935; 
         position: static;
@@ -390,13 +400,11 @@ footer .social-links {
     }
 
 
-
-
     /*TODO: FALTA CSS */
 
     @media only screen and (min-width: 1024px) {
         /*TODO: FALTA CSS */
-        /*modificando los divs de contacto y bio-info*/
+        /*se modifico el div  y bio-info*/
         .about > .container {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -404,9 +412,12 @@ footer .social-links {
           justify-content: space-between;
         }
       
+/*se usa grid en esta parte para que se formen las dos columas que se pide 
+en la tecera parte de la pagina web*/
         .about h2 {
           grid-column: 1 / span 3;
         }
+
         .contact {
           grid-column: 2/3;
           grid-row: 2/3;
