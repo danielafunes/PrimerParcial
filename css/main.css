@@ -3,10 +3,16 @@
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
 *, ::before, ::after {
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: calc(0.5em + 1vh);
+}
+.fa, .fas {
+    font-weight: 900;
+    margin-top: 1.5em;
+    color: white;
 }
 
 /* El estilo base para moviles */
@@ -398,7 +404,7 @@ debeido que se debe ajustar segun el tamño de pantalla */
         display: flex;
         margin-top: 1em;
     }
-
+  
 
     /*TODO: FALTA CSS */
 
